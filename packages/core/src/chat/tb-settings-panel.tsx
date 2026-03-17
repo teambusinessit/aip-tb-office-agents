@@ -63,7 +63,7 @@ export function createTBSettingsPanel(endpoints: TBEndpoint[]): ComponentType {
       >
         <div>
           <h2 className="text-xs uppercase tracking-wider text-(--chat-text-primary) font-semibold">
-            TB Settings
+            Fluid Einstellungen
           </h2>
           <p className="text-[11px] text-(--chat-text-muted) mt-1">
             Wähle einen Endpunkt und gib deinen API Key ein.

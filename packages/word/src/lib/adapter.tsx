@@ -36,7 +36,7 @@ export function createWordAdapter(): AppAdapter {
       "/home/user/docs/word-officejs-api.d.ts": wordApiFullDts,
     },
 
-    appName: "OpenWord",
+    appName: "Fluid Word Agent",
     metadataTag: "doc_context",
     storageNamespace: {
       dbName: "OpenWordDB_v1",
@@ -46,7 +46,7 @@ export function createWordAdapter(): AppAdapter {
       documentIdSettingsKey: "openword-document-id",
     },
     appVersion: __APP_VERSION__,
-    emptyStateMessage: "Start a conversation to create or edit your document",
+    emptyStateMessage: "Starte eine Unterhaltung – Fluid hilft dir bei der Arbeit mit deinen Word-Dokumenten.",
     HeaderExtras: TrackChangesIndicator,
     SelectionIndicator,
     buildSystemPrompt: buildWordSystemPrompt,

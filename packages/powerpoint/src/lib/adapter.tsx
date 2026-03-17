@@ -30,7 +30,7 @@ export function createPowerPointAdapter(): AppAdapter {
       "/home/user/docs/powerpoint-officejs-api.d.ts": pptApiDts,
     },
 
-    appName: "OpenPPT",
+    appName: "Fluid PowerPoint Agent",
     metadataTag: "ppt_context",
     storageNamespace: {
       dbName: "OpenPPTDB_v1",
@@ -40,8 +40,7 @@ export function createPowerPointAdapter(): AppAdapter {
       documentIdSettingsKey: "openppt-presentation-id",
     },
     appVersion: __APP_VERSION__,
-    emptyStateMessage:
-      "Start a conversation to create or edit your presentation",
+    emptyStateMessage: "Starte eine Unterhaltung – Fluid hilft dir bei der Arbeit mit deinen Präsentationen.",
     SelectionIndicator,
     buildSystemPrompt: buildPowerPointSystemPrompt,
 

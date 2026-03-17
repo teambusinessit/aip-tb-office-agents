@@ -63,7 +63,7 @@ export function createExcelAdapter(): AppAdapter {
       "/home/user/docs/excel-officejs-api.d.ts": excelApiDts,
     },
 
-    appName: "OpenExcel",
+    appName: "Fluid Excel Agent",
     metadataTag: "wb_context",
     storageNamespace: {
       dbName: "OpenExcelDB_v3",
@@ -73,7 +73,7 @@ export function createExcelAdapter(): AppAdapter {
       documentIdSettingsKey: "openexcel-workbook-id",
     },
     appVersion: __APP_VERSION__,
-    emptyStateMessage: "Start a conversation to interact with your Excel data",
+    emptyStateMessage: "Starte eine Unterhaltung – Fluid hilft dir bei der Arbeit mit deinen Excel-Daten.",
     SelectionIndicator,
     buildSystemPrompt: buildExcelSystemPrompt,
 

@@ -2,10 +2,10 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>a3f1c8e2-7b4d-4e9a-b5c6-d8f2e1a09b3c</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Office Agents</ProviderName>
-  <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="OpenWord (Dev)"/>
-  <Description DefaultValue="AI assistant for Word documents."/>
+  <ProviderName>Team Business IT</ProviderName>
+  <DefaultLocale>de-DE</DefaultLocale>
+  <DisplayName DefaultValue="Fluid Word Agent (Dev)"/>
+  <Description DefaultValue="Fluid hilft dir bei der Arbeit mit deinen Word-Dokumenten."/>
   <IconUrl DefaultValue="https://localhost:3002/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3002/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
@@ -77,13 +77,13 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3002/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with OpenWord!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Open OpenWord"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Fluid Word Agent"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Fluid"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Fluid Word Agent"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="OpenWord loaded successfully. Go to the HOME tab and click the 'Open OpenWord' button to get started."/>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the AI assistant"/>
+        <bt:String id="GetStarted.Description" DefaultValue="Fluid hilft dir bei der Arbeit mit deinen Word-Dokumenten. Klicke auf 'Fluid Word Agent' um zu starten."/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Fluid KI-Assistent öffnen"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
