@@ -1,5 +1,18 @@
 import type { AppAdapter } from "@office-agents/core";
-import { getOrCreateDocumentId } from "@office-agents/core";
+import { createTBSettingsPanel, getOrCreateDocumentId } from "@office-agents/core";
+
+const TBSettingsPanel = createTBSettingsPanel([
+  {
+    name: "Erika",
+    url: import.meta.env.VITE_TB_ERIKA_URL ?? "",
+    model: import.meta.env.VITE_TB_ERIKA_MODEL ?? "",
+  },
+  {
+    name: "Fluid",
+    url: import.meta.env.VITE_TB_FLUID_URL ?? "",
+    model: import.meta.env.VITE_TB_FLUID_MODEL ?? "",
+  },
+]);
 import { SelectionIndicator } from "./components/selection-indicator";
 import { TrackChangesIndicator } from "./components/track-changes-indicator";
 import wordApiFullDts from "./docs/word-officejs-api.d.ts?raw";
@@ -54,6 +67,8 @@ export function createWordAdapter(): AppAdapter {
     onToolResult: () => {
       window.dispatchEvent(new Event(TRACKING_MODE_CHANGED_EVENT));
     },
+
+    SettingsPanel: TBSettingsPanel,
   };
 }
 

@@ -36,4 +36,5 @@ export interface AppAdapter {
   Link?: ComponentType<LinkProps>;
   HeaderExtras?: ComponentType;
   SelectionIndicator?: ComponentType;
+  SettingsPanel?: ComponentType;
 }

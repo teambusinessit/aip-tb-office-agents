@@ -124,7 +124,8 @@ export type {
   AppAdapter,
   ChatTab,
   LinkProps,
+  TBEndpoint,
   ToolExtrasProps,
 } from "./chat";
-export { ChatInterface, ChatProvider, useChat } from "./chat";
+export { ChatInterface, ChatProvider, createTBSettingsPanel, useChat } from "./chat";
 export { ErrorBoundary } from "./chat/error-boundary";

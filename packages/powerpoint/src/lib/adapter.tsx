@@ -1,5 +1,18 @@
 import type { AppAdapter } from "@office-agents/core";
-import { getOrCreateDocumentId } from "@office-agents/core";
+import { createTBSettingsPanel, getOrCreateDocumentId } from "@office-agents/core";
+
+const TBSettingsPanel = createTBSettingsPanel([
+  {
+    name: "Erika",
+    url: import.meta.env.VITE_TB_ERIKA_URL ?? "",
+    model: import.meta.env.VITE_TB_ERIKA_MODEL ?? "",
+  },
+  {
+    name: "Fluid",
+    url: import.meta.env.VITE_TB_FLUID_URL ?? "",
+    model: import.meta.env.VITE_TB_FLUID_MODEL ?? "",
+  },
+]);
 import { SelectionIndicator } from "./components/selection-indicator";
 import pptApiDts from "./docs/powerpoint-officejs-api.d.ts?raw";
 import { buildPowerPointSystemPrompt } from "./system-prompt";
@@ -56,6 +69,8 @@ export function createPowerPointAdapter(): AppAdapter {
         // Not JSON or no modified slide info
       }
     },
+
+    SettingsPanel: TBSettingsPanel,
   };
 }
 

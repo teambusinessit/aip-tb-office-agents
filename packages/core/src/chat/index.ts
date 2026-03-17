@@ -4,6 +4,8 @@ export type {
   ToolCallStatus,
 } from "@office-agents/sdk";
 export type { AppAdapter, LinkProps, ToolExtrasProps } from "./app-adapter";
+export { createTBSettingsPanel } from "./tb-settings-panel";
+export type { TBEndpoint } from "./tb-settings-panel";
 export type { ProviderConfig } from "./chat-context";
 export { ChatProvider, useChat } from "./chat-context";
 export { ChatInterface } from "./chat-interface";

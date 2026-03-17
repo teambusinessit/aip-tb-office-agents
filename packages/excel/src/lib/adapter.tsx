@@ -3,7 +3,20 @@ import type {
   LinkProps,
   ToolExtrasProps,
 } from "@office-agents/core";
-import { getOrCreateDocumentId, useChat } from "@office-agents/core";
+import { createTBSettingsPanel, getOrCreateDocumentId, useChat } from "@office-agents/core";
+
+const TBSettingsPanel = createTBSettingsPanel([
+  {
+    name: "Erika",
+    url: import.meta.env.VITE_TB_ERIKA_URL ?? "",
+    model: import.meta.env.VITE_TB_ERIKA_MODEL ?? "",
+  },
+  {
+    name: "Fluid",
+    url: import.meta.env.VITE_TB_FLUID_URL ?? "",
+    model: import.meta.env.VITE_TB_FLUID_MODEL ?? "",
+  },
+]);
 import { Edit3 } from "lucide-react";
 import { useMemo } from "react";
 import { SelectionIndicator } from "./components/selection-indicator";
@@ -98,6 +111,7 @@ export function createExcelAdapter(): AppAdapter {
 
     Link: CitationLink,
     ToolExtras: DirtyRangeExtras,
+    SettingsPanel: TBSettingsPanel,
   };
 }
 

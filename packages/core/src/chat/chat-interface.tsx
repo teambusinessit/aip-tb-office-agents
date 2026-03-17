@@ -381,7 +381,7 @@ function SelectionIndicatorSlot() {
 function ChatContent() {
   const [activeTab, setActiveTab] = useState<ChatTab>("chat");
   const { theme, toggle } = useTheme();
-  const { processFiles } = useChat();
+  const { processFiles, adapter } = useChat();
   const [isDragOver, setIsDragOver] = useState(false);
   const dragCounterRef = useRef(0);
 
@@ -447,6 +447,8 @@ function ChatContent() {
         </>
       ) : activeTab === "files" ? (
         <FilesPanel />
+      ) : adapter.SettingsPanel ? (
+        <adapter.SettingsPanel />
       ) : (
         <SettingsPanel />
       )}
